@@ -5,21 +5,21 @@
 class Vet < Formula
   desc "SafeDep vet is a tool for identifying open source software supply chain risks"
   homepage "https://safedep.io"
-  version "1.6.0"
+  version "1.6.1"
   license "Apache-2.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/safedep/vet/releases/download/v1.6.0/vet_Darwin_x86_64.tar.gz"
-      sha256 "511d2a52dfcd071dba9f16f6bf5dbe6c1712126928fddc4ae34acefd114a44a0"
+      url "https://github.com/safedep/vet/releases/download/v1.6.1/vet_Darwin_x86_64.tar.gz"
+      sha256 "5c50d8a3fe6815aeff3daf17caf7c773476dee292f6d607a7203b1a2027bcd91"
 
       def install
         bin.install "vet"
       end
     end
     on_arm do
-      url "https://github.com/safedep/vet/releases/download/v1.6.0/vet_Darwin_arm64.tar.gz"
-      sha256 "69f77af8c1b216c228d769b499dd4667697e615e361f5f9048c6b7da7c659284"
+      url "https://github.com/safedep/vet/releases/download/v1.6.1/vet_Darwin_arm64.tar.gz"
+      sha256 "0e26cfe4f0b04256276fc2f0691a01907b9c1dd09c1e1b2b632d21c7e92cc432"
 
       def install
         bin.install "vet"
@@ -30,8 +30,8 @@ class Vet < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/safedep/vet/releases/download/v1.6.0/vet_Linux_x86_64.tar.gz"
-        sha256 "7f5480e958b7c68f9dda885638d611fa59c4e7b11e728442a7ce65c898e4414e"
+        url "https://github.com/safedep/vet/releases/download/v1.6.1/vet_Linux_x86_64.tar.gz"
+        sha256 "0ecd407c4f23b8144497a529811e1ecc60fb730513e45eeedb38631683616ba8"
 
         def install
           bin.install "vet"
