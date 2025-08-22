@@ -5,21 +5,21 @@
 class Xbom < Formula
   desc "Generate BOMs enriched with AI, SaaS and more using Static Code Analysis"
   homepage "https://github.com/safedep/xbom"
-  version "0.0.2"
+  version "0.0.3"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/safedep/xbom/releases/download/v0.0.2/xbom_Darwin_x86_64.tar.gz"
-      sha256 "fdd899b7dd11279df231b343fb799b2cc77e4d67b0bf066ddac8541e536faa7e"
+      url "https://github.com/safedep/xbom/releases/download/v0.0.3/xbom_Darwin_x86_64.tar.gz"
+      sha256 "407188ec3f075ad2c53d01f6112e577e7e18329603635893d1d7b86c525c6384"
 
       def install
         bin.install "xbom"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/safedep/xbom/releases/download/v0.0.2/xbom_Darwin_arm64.tar.gz"
-      sha256 "0c5c3ecf2ea45209fed58069784733d7b2ee7042a84e36c9de2ed504cb2021d2"
+      url "https://github.com/safedep/xbom/releases/download/v0.0.3/xbom_Darwin_arm64.tar.gz"
+      sha256 "f4fc0f82845cf25534cf1b1af8413a6241616096171ceb7a98c6ce11e59564ad"
 
       def install
         bin.install "xbom"
@@ -29,8 +29,8 @@ class Xbom < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/safedep/xbom/releases/download/v0.0.2/xbom_Linux_x86_64.tar.gz"
-      sha256 "6862bf923844313a7b228ae2a0ba431e42b8a0407d3580c031b2cd28fd992b6d"
+      url "https://github.com/safedep/xbom/releases/download/v0.0.3/xbom_Linux_x86_64.tar.gz"
+      sha256 "df6282edc919581c53faab8c5b21f8247b3d3f4e8a97a1d6d0343b6e5b3ef3d3"
       def install
         bin.install "xbom"
       end
