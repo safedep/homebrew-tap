@@ -5,12 +5,12 @@
 class Pmg < Formula
   desc "PMG protects developers from malicious packages"
   homepage "https://github.com/safedep/pmg"
-  version "0.3.7"
+  version "0.3.8"
   license "Apache-2.0"
 
   on_macos do
-    url "https://github.com/safedep/pmg/releases/download/v0.3.7/pmg_Darwin_all.tar.gz"
-    sha256 "abc64d669232690c53a22cc48c549a4fd5b0c07b4cffae97ab000c622fca8a4a"
+    url "https://github.com/safedep/pmg/releases/download/v0.3.8/pmg_Darwin_all.tar.gz"
+    sha256 "1881b4dde47e063da2d315e254d8e43fc3b5b7f8fbe87e5e0fb74315cade0c9a"
 
     def install
       bin.install "pmg"
@@ -19,15 +19,15 @@ class Pmg < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/safedep/pmg/releases/download/v0.3.7/pmg_Linux_x86_64.tar.gz"
-      sha256 "d9164d2486542b2a9c20ca1dc22f2274198d10dc92932a869efb1a4ab26a0a98"
+      url "https://github.com/safedep/pmg/releases/download/v0.3.8/pmg_Linux_x86_64.tar.gz"
+      sha256 "fb28eba3a7264553f46dfc2c8625c10a0d02c8cd956747deb16273f1aaca6097"
       def install
         bin.install "pmg"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/safedep/pmg/releases/download/v0.3.7/pmg_Linux_arm64.tar.gz"
-      sha256 "e76883d185232e311823accbbd24b8497e2f95a436a980713bbfc351638aac3d"
+      url "https://github.com/safedep/pmg/releases/download/v0.3.8/pmg_Linux_arm64.tar.gz"
+      sha256 "eb9ddad8b6eb9575a9b37ef3a3483513ed903760be6c89c426b86652f03284fd"
       def install
         bin.install "pmg"
       end
