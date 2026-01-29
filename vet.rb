@@ -5,21 +5,21 @@
 class Vet < Formula
   desc "SafeDep vet is a tool for identifying open source software supply chain risks"
   homepage "https://safedep.io"
-  version "1.12.18"
+  version "1.12.19"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/safedep/vet/releases/download/v1.12.18/vet_Darwin_x86_64.tar.gz"
-      sha256 "a1d6767bb88e3ab46de145f2ad645a381eae58f56b40eeb6c22a91b16325c8f1"
+      url "https://github.com/safedep/vet/releases/download/v1.12.19/vet_Darwin_x86_64.tar.gz"
+      sha256 "d3587ddc916989dee5c1948fad2e03a51bc118ffc6f73d4b9db9b619ffe97285"
 
       def install
         bin.install "vet"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/safedep/vet/releases/download/v1.12.18/vet_Darwin_arm64.tar.gz"
-      sha256 "b800b96c2337a225e93b65411648c8dfc77370ad9310302e6a869ac750155695"
+      url "https://github.com/safedep/vet/releases/download/v1.12.19/vet_Darwin_arm64.tar.gz"
+      sha256 "40f17c315ee8e571d208b2d174cce649b5b586ba784f31044bb1ec5b6d10473d"
 
       def install
         bin.install "vet"
@@ -29,15 +29,15 @@ class Vet < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/safedep/vet/releases/download/v1.12.18/vet_Linux_x86_64.tar.gz"
-      sha256 "5cb08952ca811ad2bccc990005887eca3f20e6d14dfab4ac4f28620de2c9451f"
+      url "https://github.com/safedep/vet/releases/download/v1.12.19/vet_Linux_x86_64.tar.gz"
+      sha256 "4a6d412d69675c81b1852a3d02b91a5b32d4441f16d88a7a5c305dcb2d21a25d"
       def install
         bin.install "vet"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/safedep/vet/releases/download/v1.12.18/vet_Linux_arm64.tar.gz"
-      sha256 "47d5c96769ff821f9eed8f6b2f3dfaca9e519fe1cf474549ea04e8e8f88c5651"
+      url "https://github.com/safedep/vet/releases/download/v1.12.19/vet_Linux_arm64.tar.gz"
+      sha256 "189433116405d959e6843817f41ffe78ace6094d5eee7a3f946ec78e9cf7e7c9"
       def install
         bin.install "vet"
       end
