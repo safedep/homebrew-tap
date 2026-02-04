@@ -5,12 +5,12 @@
 class Gryph < Formula
   desc "AI Coding Agent Observability Tool"
   homepage "https://github.com/safedep/gryph"
-  version "0.2.8"
+  version "0.2.9"
   license "Apache-2.0"
 
   on_macos do
-    url "https://github.com/safedep/gryph/releases/download/v0.2.8/gryph_Darwin_all.tar.gz"
-    sha256 "db39332f3c64c2a57ab0bcfb703fe3537ce228ee62858d6fe281185be627b488"
+    url "https://github.com/safedep/gryph/releases/download/v0.2.9/gryph_Darwin_all.tar.gz"
+    sha256 "9bf82e8a6067964befd25e613858dd72a5ea325223a6e0d41c2bc485e2f23375"
 
     def install
       bin.install "gryph"
@@ -19,15 +19,15 @@ class Gryph < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/safedep/gryph/releases/download/v0.2.8/gryph_Linux_x86_64.tar.gz"
-      sha256 "c8d81dc30f42adb3b58746dce1522144bdfbafee2c35f5ae6952ce1fb864b26c"
+      url "https://github.com/safedep/gryph/releases/download/v0.2.9/gryph_Linux_x86_64.tar.gz"
+      sha256 "06364e0adcadb26f967c8c6ba7b8181ddb206ce8f5fc721bc3157f56f215b04d"
       def install
         bin.install "gryph"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/safedep/gryph/releases/download/v0.2.8/gryph_Linux_arm64.tar.gz"
-      sha256 "575a5f96bff6887176dfb8e814556ee8da9d3100ee948a7a60483e3a07a20e34"
+      url "https://github.com/safedep/gryph/releases/download/v0.2.9/gryph_Linux_arm64.tar.gz"
+      sha256 "e5e0a3309799a5f63e24ac46f51a16c7fe5b0d1b71512e399e90899505c4161e"
       def install
         bin.install "gryph"
       end
