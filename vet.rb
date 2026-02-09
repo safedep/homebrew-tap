@@ -5,21 +5,21 @@
 class Vet < Formula
   desc "SafeDep vet is a tool for identifying open source software supply chain risks"
   homepage "https://safedep.io"
-  version "1.12.22"
+  version "1.13.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/safedep/vet/releases/download/v1.12.22/vet_Darwin_x86_64.tar.gz"
-      sha256 "6fa73d331ac1f27071e5d30195ba7ae5db2a51b4e9b57464aa2e895d51df3662"
+      url "https://github.com/safedep/vet/releases/download/v1.13.0/vet_Darwin_x86_64.tar.gz"
+      sha256 "102142b86a2188840e6d8de1bf366bcee7f1659560fb6d53bf7b82fd38ffa29c"
 
       def install
         bin.install "vet"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/safedep/vet/releases/download/v1.12.22/vet_Darwin_arm64.tar.gz"
-      sha256 "ec4809985bc9ff645c16d3167d2b76a25cc052e8b36a69c7dd84a06ce78b3e49"
+      url "https://github.com/safedep/vet/releases/download/v1.13.0/vet_Darwin_arm64.tar.gz"
+      sha256 "46868b1f6b1ed4774d2bd3441d0fec8a742c4523a861bf8de46e8dfc504d9a20"
 
       def install
         bin.install "vet"
@@ -29,15 +29,15 @@ class Vet < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/safedep/vet/releases/download/v1.12.22/vet_Linux_x86_64.tar.gz"
-      sha256 "62c34f54e897d684e2e91595d63fd83132bc22d3d9daa48acf77b3868f4cc8f4"
+      url "https://github.com/safedep/vet/releases/download/v1.13.0/vet_Linux_x86_64.tar.gz"
+      sha256 "4c5319eec527b7ffb13281334a0a8dea4ac7256f105425c731e5cc20fdf6a148"
       def install
         bin.install "vet"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/safedep/vet/releases/download/v1.12.22/vet_Linux_arm64.tar.gz"
-      sha256 "694da0d90fda43a8a255510dc24c0c9e8e629ed1c4ce5b8c6f57510834078390"
+      url "https://github.com/safedep/vet/releases/download/v1.13.0/vet_Linux_arm64.tar.gz"
+      sha256 "7c2ea934268fc2943d6d974624116a1f7a8e387b9361aba2f749dc07fc263c4a"
       def install
         bin.install "vet"
       end
