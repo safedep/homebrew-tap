@@ -5,21 +5,21 @@
 class Vet < Formula
   desc "SafeDep vet is a tool for identifying open source software supply chain risks"
   homepage "https://safedep.io"
-  version "1.17.4"
+  version "1.17.5"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/safedep/vet/releases/download/v1.17.4/vet_Darwin_x86_64.tar.gz"
-      sha256 "3ba212955775808a21b9926d22b3842150e1a03b690896263710a0d21a672945"
+      url "https://github.com/safedep/vet/releases/download/v1.17.5/vet_Darwin_x86_64.tar.gz"
+      sha256 "34bc752dd6fc163a4a31d01195b2ccdb9949b312b2ff5188ac317b1ee00b1afc"
 
       define_method(:install) do
         bin.install "vet"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/safedep/vet/releases/download/v1.17.4/vet_Darwin_arm64.tar.gz"
-      sha256 "0be1e0025ca76a685dada275fcc84398969a9c7a6b9da11c9cb8cd3e63d9bff6"
+      url "https://github.com/safedep/vet/releases/download/v1.17.5/vet_Darwin_arm64.tar.gz"
+      sha256 "8456e784b14a915844fdc85600f575ca363e998c3ac49f0d21e9489b3cab6136"
 
       define_method(:install) do
         bin.install "vet"
@@ -29,15 +29,15 @@ class Vet < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/safedep/vet/releases/download/v1.17.4/vet_Linux_x86_64.tar.gz"
-      sha256 "ebb987aacd51fc520d4a8a4347f6c296ce49192a0838be4a174bcd33d66bd9ad"
+      url "https://github.com/safedep/vet/releases/download/v1.17.5/vet_Linux_x86_64.tar.gz"
+      sha256 "fcea8d81b832fd57d158693c3bedd5dcbd6bc1b6db69f04291b34eef23b972f6"
       define_method(:install) do
         bin.install "vet"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/safedep/vet/releases/download/v1.17.4/vet_Linux_arm64.tar.gz"
-      sha256 "1c822f1a83c3892d9ccd6609af2a8a63219263f46215e4692527b3dd34de47e2"
+      url "https://github.com/safedep/vet/releases/download/v1.17.5/vet_Linux_arm64.tar.gz"
+      sha256 "205b134a24f9f0d783f8910ffd32c3329f6324b929b29596b6f020bd071e6c41"
       define_method(:install) do
         bin.install "vet"
       end
