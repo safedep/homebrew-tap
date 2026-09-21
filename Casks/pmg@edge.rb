@@ -6,19 +6,19 @@ cask "pmg@edge" do
     end
   end
 
-  version "0.30.0-edge.1"
+  version "0.30.0-edge.2"
 
   on_macos do
-    sha256 "f1aea0c93cd5b13fa487093158f1348f98ffd483bb2804501ec3680c563e9d80"
+    sha256 "16b9e4e4eb5ae87a604fbcafe99fa29d793b74bd4b6f0e54dc3698aad9c12160"
     url "https://github.com/safedep/pmg/releases/download/v#{version}/pmg_Darwin_all.tar.gz"
   end
   on_linux do
     on_arm do
-      sha256 "286b3e2c0199c6622e9e435eefbfe0e31344ab7b1fdc908cc6f7250269f36c15"
+      sha256 "0a9c28cdee48635e6984bbe588cc55a50aec8165b008440b5770ea7c8568451f"
       url "https://github.com/safedep/pmg/releases/download/v#{version}/pmg_Linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "d2626dec9de322deff60b0eb82e1227cdd930698498d95576580a5d422260888"
+      sha256 "4144e51d3037ab1cf657b837dafb7ffce8ebe82d6bd37826c55ef71511a0ac04"
       url "https://github.com/safedep/pmg/releases/download/v#{version}/pmg_Linux_x86_64.tar.gz"
     end
   end
