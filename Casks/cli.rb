@@ -6,19 +6,19 @@ cask "cli" do
     end
   end
 
-  version "0.9.0"
+  version "0.9.1"
 
   on_macos do
-    sha256 "b7f321179b40b663a68236b4ebe496af7330e42ba2c63edc0ef2f3d3f19f342d"
+    sha256 "f960340d479efae6ff29e5ef7ee3bc3a1b84ffb70bec4de8ab1fce81001872ef"
     url "https://github.com/safedep/cli/releases/download/v#{version}/cli_Darwin_all.tar.gz"
   end
   on_linux do
     on_arm do
-      sha256 "9b46cc5f6653203cd6602b049bdec831831de779308a82643f538473ddc8d0cb"
+      sha256 "2463bc574bebd5cbcd3a4b6c6e7ec2e8ed9101b9a3e6d75b757baa7ba347ae6a"
       url "https://github.com/safedep/cli/releases/download/v#{version}/cli_Linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "2ca1812d91c522c5d2db0a156f53dba835eadb1437776595c6d58c6f1263b373"
+      sha256 "fb546823cb17404fa54844f5775923146e24b9661ad2b56f5aeaa9612241ff66"
       url "https://github.com/safedep/cli/releases/download/v#{version}/cli_Linux_x86_64.tar.gz"
     end
   end
