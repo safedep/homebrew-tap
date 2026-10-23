@@ -6,21 +6,20 @@ cask "vet@edge" do
     end
   end
 
-  version "2.0.0-alpha.20261014124335"
+  version "2.0.0-alpha.20261023182239"
 
   on_macos do
-    sha256 "738920efa10d0c853083389d4fed3a2acbf27ff91e9d5bd8d5d5adc3770ef41b"
+    sha256 "07a53a583f3cb8274c48e9a0066cbacec7edf2330794ac8cdbbb13e61344e954"
     url "https://github.com/safedep/vet/releases/download/v#{version}/vet_Darwin_all.tar.gz"
   end
-
   on_linux do
-    on_intel do
-      sha256 "729af7369db706c636c934a7fffe8d5f2ff2a8a5d34a6a62a19e5b9ebeabc608"
-      url "https://github.com/safedep/vet/releases/download/v#{version}/vet_Linux_x86_64.tar.gz"
-    end
     on_arm do
-      sha256 "95c728e2cdf29c33171403df424c25d61bad073de0e23785229716db6652c959"
+      sha256 "724ce66029c3815994abc05e64ee1238db13f27c070149b631d53a4b04b97784"
       url "https://github.com/safedep/vet/releases/download/v#{version}/vet_Linux_arm64.tar.gz"
+    end
+    on_intel do
+      sha256 "ccad34e7f20f2ceedc303142d67816c3bb28441ae9f7b269560cd9951402238e"
+      url "https://github.com/safedep/vet/releases/download/v#{version}/vet_Linux_x86_64.tar.gz"
     end
   end
 
@@ -38,5 +37,4 @@ cask "vet@edge" do
   binary "vet"
 
   # No zap stanza required
-
 end
