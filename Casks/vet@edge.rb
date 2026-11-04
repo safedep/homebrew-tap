@@ -6,19 +6,19 @@ cask "vet@edge" do
     end
   end
 
-  version "2.0.0-alpha.20261023182239"
+  version "2.0.0-alpha.20261104150130"
 
   on_macos do
-    sha256 "07a53a583f3cb8274c48e9a0066cbacec7edf2330794ac8cdbbb13e61344e954"
+    sha256 "2a2ec5b0c09a1efc32f9766f8d7e7b69c4643172df5b72452626bdbbc476a41f"
     url "https://github.com/safedep/vet/releases/download/v#{version}/vet_Darwin_all.tar.gz"
   end
   on_linux do
     on_arm do
-      sha256 "724ce66029c3815994abc05e64ee1238db13f27c070149b631d53a4b04b97784"
+      sha256 "978c8f29018a08f6310900a323d8f748c5320e958e953f09173e6813b2a8b82d"
       url "https://github.com/safedep/vet/releases/download/v#{version}/vet_Linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "ccad34e7f20f2ceedc303142d67816c3bb28441ae9f7b269560cd9951402238e"
+      sha256 "e9acdb5f834aa9b560dfa9192f63148b9e89e9d5d9df293ae51f24755e440c13"
       url "https://github.com/safedep/vet/releases/download/v#{version}/vet_Linux_x86_64.tar.gz"
     end
   end
