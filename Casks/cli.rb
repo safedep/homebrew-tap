@@ -6,19 +6,19 @@ cask "cli" do
     end
   end
 
-  version "0.10.0"
+  version "0.11.0"
 
   on_macos do
-    sha256 "69a983e0630293fe9895f4a683db8105c56587f49b6cf33666d8b2bd5679a1f8"
+    sha256 "b9b408180e1ef45b61148239ab38e79d6146bbcc69ad247989d3411c71b79144"
     url "https://github.com/safedep/cli/releases/download/v#{version}/cli_Darwin_all.tar.gz"
   end
   on_linux do
     on_arm do
-      sha256 "3ebed99cd2254fec85fcc7b0c6f9fa4bc3b7a9bd836dafb1432e94099ea86549"
+      sha256 "31285fa2ba9e569fb0a62f713598b11ba5c34f36253ebd69ca67bc92081f2cb3"
       url "https://github.com/safedep/cli/releases/download/v#{version}/cli_Linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "b526887d839540c256325ae0d88d10fc9ac10ac813c35406f9c34db2578c7b69"
+      sha256 "7e6b1fe42b5889fffa414531acecc8bb69af496c7e0166255c99f3332a831807"
       url "https://github.com/safedep/cli/releases/download/v#{version}/cli_Linux_x86_64.tar.gz"
     end
   end
@@ -33,5 +33,5 @@ cask "cli" do
 
   binary "safedep"
 
-  # No zap stanza required
+  zap :not_required
 end
