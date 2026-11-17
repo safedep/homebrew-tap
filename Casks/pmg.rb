@@ -6,19 +6,19 @@ cask "pmg" do
     end
   end
 
-  version "0.34.0"
+  version "0.35.0"
 
   on_macos do
-    sha256 "3338b30b82109d07abafb9adf31479b88222d8b4593d96675ecaeb4723d2b7fc"
+    sha256 "b7ebf9c2ff53f361c0c00f9a7fdbc7130edb0326429d81ec6fe156fa9af32dfd"
     url "https://github.com/safedep/pmg/releases/download/v#{version}/pmg_Darwin_all.tar.gz"
   end
   on_linux do
     on_arm do
-      sha256 "9c3f730b5ce6b7e2f8442d1f66aabe457dcd8a057f0dca96c06e55612260747e"
+      sha256 "2e6be44b2a167c962b72d9af23d159ec6c1e514604c73e56543fd9c1a2dfebf7"
       url "https://github.com/safedep/pmg/releases/download/v#{version}/pmg_Linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "e5a15ab95b5d4234a2160c3c27911420aee228c63ec729d42b686c26f56861ef"
+      sha256 "7628f6e1fa428f83570a677c629736fb4cde00d209c8699387c99c6a00251f25"
       url "https://github.com/safedep/pmg/releases/download/v#{version}/pmg_Linux_x86_64.tar.gz"
     end
   end
@@ -33,5 +33,5 @@ cask "pmg" do
 
   binary "pmg"
 
-  # No zap stanza required
+  zap :not_required
 end
